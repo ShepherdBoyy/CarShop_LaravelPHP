@@ -51,7 +51,7 @@ class User extends Authenticatable
         ];
     }
 
-    public function favourtieCars(): BelongsToMany
+    public function favouriteCars(): BelongsToMany
     {
         return $this->belongsToMany(Car::class, 'favourite_cars');
     }
